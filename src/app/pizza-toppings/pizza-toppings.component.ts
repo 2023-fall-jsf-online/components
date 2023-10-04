@@ -20,18 +20,18 @@ export class PizzaToppingsComponent {
     private pizzaSvc: PizzaService
   ) { }
 
-  avaliablePizzaToppings: PizzaToppingDisplay[] = [];
+  availablePizzaToppings: PizzaToppingDisplay[] = [];
 
   ngOnInit(): void {
     const pt = this.pizzaSvc.getPizzaToppingsFromCloud();
     console.log(pt);
 
-    this.avaliablePizzaToppings = pt.map(
+    this.availablePizzaToppings = pt.map(
       x => ({
         ...x, checked: false
       })
     );
 
-    console.log(this.avaliablePizzaToppings);
+    console.log(this.availablePizzaToppings);
   }
 }
