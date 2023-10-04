@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-pizza-toppings',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class PizzaToppingsComponent {
 
+  //Magic DI... Dependency injection... 
+
+  constructor(
+    private pizzaSvc: PizzaService
+  ) { }
+
+  ngOnInit(): void {
+    const pt = this.pizzaSvc.getPizzaToppingsFromCloud();
+    console.log(pt);
+  }
 }
