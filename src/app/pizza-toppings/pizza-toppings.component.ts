@@ -16,6 +16,8 @@ export class PizzaToppingsComponent implements OnInit {
 
   availablePizzaToppings: PizzaToppingDisplay[] = [];
 
+  totalPrice = 0;
+
   constructor(private pizzaService: PizzaService) {
 
   }
@@ -26,5 +28,14 @@ export class PizzaToppingsComponent implements OnInit {
       ...pt,
       checked: false
     }))
+  }
+
+  calculateTotal() {
+    this.totalPrice = this.availablePizzaToppings
+        .filter(pt => pt.checked)
+        .reduce(
+          (acc, n) => acc + n.price,
+          0
+        )
   }
 }
