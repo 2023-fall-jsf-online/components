@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
+interface PizzaToppingDisplay {
+  name: string
+  , price: number
+  , checked: boolean
+}
 
 @Component({
   selector: 'app-pizza-toppings',
@@ -9,13 +14,17 @@ import { PizzaService } from '../pizza.service';
 })
 export class PizzaToppingsComponent implements OnInit {
 
+  availablePizzaToppings: PizzaToppingDisplay[] = [];
+
   constructor(private pizzaService: PizzaService) {
 
   }
 
   ngOnInit(): void {
     const pizzaToppings = this.pizzaService.getPizzaToppingsFromTheCloud();
-    
+    this.availablePizzaToppings = pizzaToppings.map(pt => ({
+      ...pt,
+      checked: false
+    }))
   }
-
 }
