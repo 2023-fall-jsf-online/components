@@ -13,12 +13,12 @@ interface PizzaToppingDisplay {
   templateUrl: './pizza-toppings.component.html',
   styleUrls: ['./pizza-toppings.component.css']
 })
-export class PizzaToppingsComponent {
+export class PizzaToppingsComponent implements OnInit {
 
   //Magic DI... Dependency injection...
   constructor (
     private pizzaSvc: PizzaService
-  ) {}
+  ) { }
 
   availablePizzaToppings: PizzaToppingDisplay[] = [];
 
