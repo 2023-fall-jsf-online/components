@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
-import { PizzaComponent } from './pizza/pizza.component';
+/*import { PizzaComponent } from './pizza/pizza.component';*/
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    PizzaComponent
+    /*PizzaComponent*/
   ],
   imports: [
     BrowserModule
