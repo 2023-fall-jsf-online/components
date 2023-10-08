@@ -2,7 +2,9 @@
 
 <div *ngFor="let pt of availablePizzaToppings">
   <label>
-    <input type="checkbox" [(ngModel)]="pt.checked">
+    <input type="checkbox" [(ngModel)]="pt.checked" (ngModelChange)="calculateTotal()">
     {{ pt.name }} ({{ pt.price | currency:'USD' }})
   </label>
 </div>
+
+<p>Total: {{ totalPrice | currency: 'USD' }}</p>
