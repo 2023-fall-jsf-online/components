@@ -37,6 +37,8 @@ export class PizzaGluerComponent implements OnInit {
     return this.availablePizzaIngredients
         .filter(
           x => x.checked
+        ).map(
+          x => x.name
         )
         .join("+glue+")
     ;
