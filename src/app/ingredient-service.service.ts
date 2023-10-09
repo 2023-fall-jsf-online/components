@@ -10,28 +10,13 @@ export class IngredientServiceService {
   getIngredientsFromWebService () {
     const ingredientsFromWebService = [
       {
-        name: 'Crust'
-        , required: true
-      }
-      , {
-        name: 'Marinara'
-        , required: true
-      }
-      , {
-        name: 'Cheese'
-        , required: true
-      }
-      , {
         name: 'Olives'
-        , required: false
       }
       , {
         name: 'Pepperoni'
-        , required: false
       }
       , {
         name: 'Sausage'
-        , required: false
       }
     ];
 

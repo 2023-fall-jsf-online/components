@@ -13,7 +13,7 @@
         <button
             mat-mini-fab
             color="secondary"
-            (click)="uncheckAllOptional()"
+            (click)="uncheckAll()"
         >
             None
         </button>
@@ -24,7 +24,6 @@
             <label>
                 <mat-checkbox 
                     [(ngModel)]="pi.checked"
-                    [(ngModel)]="pi.disabled"
                 >
                 </mat-checkbox>
                 {{ pi.name }}

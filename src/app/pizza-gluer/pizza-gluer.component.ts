@@ -3,7 +3,6 @@ import {IngredientServiceService} from '../ingredient-service.service'; // I for
 
 interface PizzaIngredientDisplay {
   name: string;
-  disabled: boolean
   checked: boolean
 }
 
@@ -27,36 +26,43 @@ export class PizzaGluerComponent implements OnInit {
     this.availablePizzaIngredients = pi.map(
       ingredient => ({
         name: ingredient.name
-        , disabled: ingredient.required
-        , checked: ingredient.required ? true : false
+        , checked: false
       })
     );
   }
 
   get pizza() {
-    return this.availablePizzaIngredients
-        .filter(
-          x => x.checked
-        ).map(
-          x => x.name
-        )
-        .join("+glue+")
+    const pizzaMustHave = [
+      "Crust"
+      , "Marinara"
+      , "Cheese"
+    ]
+    const thisPizza = [
+      ...pizzaMustHave
+      , ...this.availablePizzaIngredients
+          .filter(
+            x => x.checked
+            ).map(
+              x => x.name
+              )
+    ]
+    return thisPizza.join("+glue+")
     ;
   }
 
   checkAll() {
-    this.availablePizzaIngredients.map(
+    this.availablePizzaIngredients = this.availablePizzaIngredients.map(
       x => ({
         ...x,checked: true
       })
     );
   }
 
-  uncheckAllOptional() {
-    this.availablePizzaIngredients.map(
+  uncheckAll() {
+    this.availablePizzaIngredients = this.availablePizzaIngredients.map(
       x => ({
         ...x
-        , checked: x.disabled ? true : false
+        , checked: false
       })
     )
   }
