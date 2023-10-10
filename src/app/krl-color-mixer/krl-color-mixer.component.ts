@@ -22,4 +22,18 @@ export class KrlColorMixerComponent implements OnInit{
     }
   }
 
+  addGreen() : void {
+    if (this.greenValue >= 0 && this.greenValue < 255) {
+      this.greenValue += 5;
+      console.log(this.greenValue);
+    }
+  }
+
+  addBlue() : void {
+    if (this.blueValue >= 0 && this.blueValue < 255) {
+      this.blueValue += 5;
+      console.log(this.blueValue);
+    }
+  }
+
 }
