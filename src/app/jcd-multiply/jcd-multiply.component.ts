@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class JcdMultiplyComponent {
 
+  numberOne = 10;
+  numberTwo = 10;
+  total= 100;
+
+  multiply = () => this.total = this.numberOne * this.numberTwo;
+
 }
