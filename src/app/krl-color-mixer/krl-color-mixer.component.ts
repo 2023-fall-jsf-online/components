@@ -7,37 +7,53 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KrlColorMixerComponent implements OnInit{
 
-  redValue : number = 0;
-  greenValue : number = 0;
-  blueValue : number = 0;
+  redValue : number = 255;
+  greenValue : number = 255;
+  blueValue : number = 255;
+  rgbString : string = "";
 
   ngOnInit() : void {
-    
+    this.makeString();
   }
 
-  addRed() : void {
-    if (this.redValue >= 0 && this.redValue < 255) {
-      this.redValue += 5;
-      console.log(this.redValue);
+  makeString = () => {
+    this.rgbString = `background-color:rgb(${this.redValue},${this.greenValue},${this.blueValue})`;
+    console.log(this.rgbString);
+  }
+
+  addRed = () => {
+    if (this.greenValue <= 255 && this.greenValue > 0) {
+      this.greenValue = this.greenValue - Math.round(this.greenValue * .25);
     }
-  }
-
-  addGreen() : void {
-    if (this.greenValue >= 0 && this.greenValue < 255) {
-      this.greenValue += 5;
-      console.log(this.greenValue);
+    if (this.blueValue <= 255 && this.blueValue > 0) {
+      this.blueValue = this.blueValue - Math.round(this.blueValue * .25);
     }
+    this.makeString();
   }
 
-  addBlue() : void {
-    if (this.blueValue >= 0 && this.blueValue < 255) {
-      this.blueValue += 5;
-      console.log(this.blueValue);
+  addGreen = () => {
+    if (this.redValue <= 255 && this.redValue > 0) {
+      this.redValue = this.redValue - Math.round(this.redValue * .25);
     }
+    if (this.blueValue <= 255 && this.blueValue > 0) {
+      this.blueValue = this.blueValue - Math.round(this.blueValue * .25);
+    }
+    this.makeString();
   }
 
+  addBlue = () => {
+    if (this.greenValue <= 255 && this.greenValue > 0) {
+      this.greenValue = this.greenValue - Math.round(this.greenValue * .25);
+    }
+    if (this.redValue <= 255 && this.redValue > 0) {
+      this.redValue = this.redValue - Math.round(this.redValue * .25);
+    }
+    this.makeString();
+  }
+
+/*
   addWhite() : void {}
   addBlack() : void {}
   clearColor() : void {}
-
+*/
 }
