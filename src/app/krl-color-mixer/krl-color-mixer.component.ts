@@ -18,42 +18,44 @@ export class KrlColorMixerComponent implements OnInit{
 
   makeString = () => {
     this.rgbString = `background-color:rgb(${this.redValue},${this.greenValue},${this.blueValue})`;
-    console.log(this.rgbString);
   }
 
   addRed = () => {
     if (this.greenValue <= 255 && this.greenValue > 0) {
-      this.greenValue = this.greenValue - Math.round(this.greenValue * .25);
+      this.greenValue = this.greenValue - 10;
     }
     if (this.blueValue <= 255 && this.blueValue > 0) {
-      this.blueValue = this.blueValue - Math.round(this.blueValue * .25);
+      this.blueValue = this.blueValue - 10;
     }
     this.makeString();
   }
 
   addGreen = () => {
     if (this.redValue <= 255 && this.redValue > 0) {
-      this.redValue = this.redValue - Math.round(this.redValue * .25);
+      this.redValue = this.redValue - 10;
     }
     if (this.blueValue <= 255 && this.blueValue > 0) {
-      this.blueValue = this.blueValue - Math.round(this.blueValue * .25);
+      this.blueValue = this.blueValue - 10;
     }
     this.makeString();
   }
 
   addBlue = () => {
     if (this.greenValue <= 255 && this.greenValue > 0) {
-      this.greenValue = this.greenValue - Math.round(this.greenValue * .25);
+      this.greenValue = this.greenValue - 10;
     }
     if (this.redValue <= 255 && this.redValue > 0) {
-      this.redValue = this.redValue - Math.round(this.redValue * .25);
+      this.redValue = this.redValue - 10;
     }
     this.makeString();
   }
 
-/*
-  addWhite() : void {}
+  addWhite = () => {
+    if (this.redValue < 255) this.redValue = this.redValue + 10;
+    if (this.greenValue < 255) this.greenValue = this.greenValue + 10;
+    if (this.blueValue < 255) this.blueValue = this.blueValue + 10;
+    this.makeString();
+  }
   addBlack() : void {}
   clearColor() : void {}
-*/
 }
