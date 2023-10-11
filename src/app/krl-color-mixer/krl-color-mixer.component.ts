@@ -36,4 +36,8 @@ export class KrlColorMixerComponent implements OnInit{
     }
   }
 
+  addWhite() : void {}
+  addBlack() : void {}
+  clearColor() : void {}
+
 }
