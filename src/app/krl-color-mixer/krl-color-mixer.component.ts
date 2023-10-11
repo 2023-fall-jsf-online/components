@@ -56,6 +56,13 @@ export class KrlColorMixerComponent implements OnInit{
     if (this.blueValue < 255) this.blueValue = this.blueValue + 10;
     this.makeString();
   }
-  addBlack() : void {}
+
+  addBlack = () => {
+    if (this.redValue > 0) this.redValue = this.redValue - 10;
+    if (this.greenValue > 0) this.greenValue = this.greenValue - 10;
+    if (this.blueValue > 0) this.blueValue = this.blueValue - 10;
+    this.makeString();
+  }
+  
   clearColor() : void {}
 }
