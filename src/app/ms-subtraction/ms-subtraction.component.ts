@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class MsSubtractionComponent {
 
+  numberOne = 3;
+  numberTwo = 2;
+
+  total = 1;
+
+  subtract = () => this.total = this.numberOne - this.numberTwo
+
 }
