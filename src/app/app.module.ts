@@ -12,11 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
 
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     KrlColorMixerComponent
+    , TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -25,6 +30,8 @@ import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.compon
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
