@@ -22,15 +22,20 @@ export class PizzaToppingsComponent {
     ngOnInit(): void {
 
       const pt = this.pizzaSvc.getPizzaToppingsFromCloud();
-      console.log(pt);
+      // console.log(pt);
 
       this.availablePizzaToppings = pt.map( x => ({
         ...x
         , checked: false
       }));
-      console.log(this.availablePizzaToppings);
+      // console.log(this.availablePizzaToppings);
+    }
 
-      
+    totalPrice = 0;
 
+    calculateTotal = () => {      
+      this.totalPrice = this.availablePizzaToppings
+        .filter(x => x.checked)
+        .reduce((acc, cur) => acc + cur.price, 0);        
     }
   }
