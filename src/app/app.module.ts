@@ -13,12 +13,18 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { JcdMultiplyComponent } from './jcd-multiply/jcd-multiply.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    JcdMultiplyComponent
+    JcdMultiplyComponent,
+    KrlColorMixerComponent
+    , TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -27,8 +33,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    , MatInputModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

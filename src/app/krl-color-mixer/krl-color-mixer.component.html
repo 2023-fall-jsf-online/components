@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>
+        Color Mixer
+    </mat-card-title>
+    <mat-card-content>
+        <div id="colorMixer" [style]="rgbString"></div>
+        <div>
+            <button mat-raised-button color="basic" (click)="addRed()">Add Red</button>
+            <button mat-raised-button color="basic" (click)="addGreen()">Add Green</button>
+            <button mat-raised-button color="basic" (click)="addBlue()">Add Blue</button>
+        </div>
+        <div>
+            <button mat-raised-button color="basic" (click)="addWhite()">Add White</button>
+            <button mat-raised-button color="basic" (click)="addBlack()">Add Black</button>
+            <button mat-raised-button color="basic" (click)="clearColor()">Clear Color</button>
+        </div>
+    </mat-card-content>
+</mat-card>
