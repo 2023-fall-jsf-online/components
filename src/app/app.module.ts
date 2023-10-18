@@ -15,13 +15,14 @@ import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.compon
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     KrlColorMixerComponent
-    , TjsMultiplicationComponent
+    , TjsMultiplicationComponent, MhanCalculateComponent
   ],
   imports: [
     BrowserModule
