@@ -25,8 +25,9 @@ import { JvdImagePickerComponent } from './jvd-image-picker/jvd-image-picker.com
     AppComponent,
     PizzaToppingsComponent,
     KrlColorMixerComponent
-    , TjsMultiplicationComponent  
-    , PizzaGluerComponent, JvdImagePickerComponent
+    , TjsMultiplicationComponent
+    , PizzaGluerComponent
+    , JvdImagePickerComponent
   ],
   imports: [
     BrowserModule
