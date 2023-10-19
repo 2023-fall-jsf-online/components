@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-title>
+        Which Pizza Ingredients?
+    </mat-card-title>
+    <mat-card-content>
+        <button
+            mat-mini-fab
+            (click)="checkAll()"
+        >
+            All
+        </button>
+        &nbsp;
+        <button
+            mat-mini-fab
+            color="secondary"
+            (click)="uncheckAll()"
+        >
+            None
+        </button>
+        <br>
+        <div
+            *ngFor="let pi of availablePizzaIngredients"
+        >
+            <label>
+                <mat-checkbox 
+                    [(ngModel)]="pi.checked"
+                >
+                </mat-checkbox>
+                {{ pi.name }}
+            </label>
+        </div>
+        <br>
+        <h3>
+            Your Pizza: {{ pizza }}
+        </h3>
+    </mat-card-content>
+</mat-card>
