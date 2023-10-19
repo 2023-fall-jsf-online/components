@@ -1,1 +1,9 @@
-<p>jvd-image-picker works!</p>
+<mat-card>
+  <mat-card-title>Image Picker</mat-card-title>
+  <p>Select an image to view:</p>
+  <mat-card-content>
+    <input type="file" #fileInput id="fileInput" accept="image/*" (change)="onFileSelected($event)">
+    <button mat-raised-button color="primary" (click)="fileInput.click()">Choose File</button>
+    <img [src]="selectedImage" *ngIf="selectedImage" alt="Selected Image">
+  </mat-card-content>
+</mat-card>
