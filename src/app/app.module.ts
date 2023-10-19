@@ -18,6 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
+import { JvdImagePickerComponent } from './jvd-image-picker/jvd-image-picker.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
     PizzaToppingsComponent,
     KrlColorMixerComponent
     , TjsMultiplicationComponent  
-    , PizzaGluerComponent
+    , PizzaGluerComponent, JvdImagePickerComponent
   ],
   imports: [
     BrowserModule
