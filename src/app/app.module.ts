@@ -15,11 +15,22 @@ import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.componen
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    MsSubtractionComponent
+    KrlColorMixerComponent
+    , TjsMultiplicationComponent  
+    , PizzaGluerComponent
+    , MsSubtractionComponent
   ],
   imports: [
     BrowserModule
@@ -28,8 +39,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    , MatInputModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
