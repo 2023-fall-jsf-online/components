@@ -26,7 +26,8 @@ import { SjsAdditionComponent } from './sjs-addition/sjs-addition.component';
     PizzaToppingsComponent,
     KrlColorMixerComponent
     , TjsMultiplicationComponent  
-    , PizzaGluerComponent, SjsAdditionComponent
+    , PizzaGluerComponent
+    , SjsAdditionComponent
   ],
   imports: [
     BrowserModule
