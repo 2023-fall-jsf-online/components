@@ -34,6 +34,12 @@ export class BsListGeneratorComponent   {
       name: "Laundry"
       , done: false
     }
+    , {
+      name: " "
+      , done: false
+    }
   ];
+
+  addItemToList = () => this.todos;
 
 }

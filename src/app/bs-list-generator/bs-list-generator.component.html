@@ -14,5 +14,14 @@
             </mat-checkbox>
             <br>
         </div>
+
+        <mat-form-field>
+            <mat-label>Add To-do item</mat-label>
+            <input matInput placeholder="Ex. Dishes">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="addItemToList()">Add</button>
+
     </mat-card-content>
+
 </mat-card>
