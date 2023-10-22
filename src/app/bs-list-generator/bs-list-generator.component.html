@@ -4,12 +4,15 @@
     </mat-card-title>
 
     <mat-card-content>
-        <mat-checkbox>Homework</mat-checkbox>
-        <br>
-        <mat-checkbox>Walk Dog</mat-checkbox>
-        <br>
-        <mat-checkbox>Get Groceries</mat-checkbox>
-        <br>
-        <mat-checkbox>Laundry</mat-checkbox>
+        <div
+            *ngFor="let td of todos"
+        >
+            <mat-checkbox
+                [(ngModel)]="td.done"
+            >
+                {{ td.name }}
+            </mat-checkbox>
+            <br>
+        </div>
     </mat-card-content>
 </mat-card>
