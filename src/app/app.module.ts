@@ -18,6 +18,8 @@ import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.compon
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 
+import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.component';
+
 import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
 
 import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
@@ -27,7 +29,8 @@ import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.componen
     AppComponent,
     PizzaToppingsComponent,
     KrlColorMixerComponent
-    , TjsMultiplicationComponent  
+    , TjsMultiplicationComponent
+    , MhanCalculateComponent 
     , PizzaGluerComponent
     , MsSubtractionComponent
   ],
