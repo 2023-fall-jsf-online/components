@@ -18,7 +18,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
+
 import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.component';
+
 
 @NgModule({
   declarations: [
