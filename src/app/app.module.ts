@@ -16,6 +16,7 @@ import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.compon
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.component';
 
 import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
 import { JvdImagePickerComponent } from './jvd-image-picker/jvd-image-picker.component';
@@ -26,6 +27,7 @@ import { JvdImagePickerComponent } from './jvd-image-picker/jvd-image-picker.com
     PizzaToppingsComponent,
     KrlColorMixerComponent
     , TjsMultiplicationComponent
+    , MhanCalculateComponent 
     , PizzaGluerComponent
     , JvdImagePickerComponent
   ],
