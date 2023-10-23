@@ -1,0 +1,47 @@
+<mat-card>
+    <mat-card-title>
+        Han's Calculator
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>
+                Number 1
+            </mat-label>
+            <input
+                matInput 
+                type="number"
+                [(ngModel)]="numberOne" 
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>
+                Action
+            </mat-label>
+            <select matNativeControl required [(ngModel)]="action" >
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+          </mat-form-field>
+        <mat-form-field>
+            <mat-label>
+                Number 2
+            </mat-label>
+            <input
+                matInput 
+                type="number" 
+                [(ngModel)]="numberTwo" 
+            />
+        </mat-form-field>
+        &nbsp;
+        <button
+            mat-mini-fab
+            (click)="calculate()"
+        >
+            =
+        </button>
+        &nbsp;
+        {{ result }}
+    </mat-card-content>
+</mat-card>

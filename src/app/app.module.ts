@@ -11,16 +11,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+
+import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.component';
 
 import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
 
 import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.component';
 
+import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.
     PizzaToppingsComponent,
     KrlColorMixerComponent
     , TjsMultiplicationComponent  
-    , PizzaGluerComponent, BsListGeneratorComponent
+    , PizzaGluerComponent
+    , BsListGeneratorComponent
+    , TjsMultiplicationComponent
+    , MhanCalculateComponent 
+    , MsSubtractionComponent
   ],
   imports: [
     BrowserModule
