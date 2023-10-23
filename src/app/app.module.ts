@@ -10,9 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-
+import { JcdMultiplyComponent } from './jcd-multiply/jcd-multiply.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
 
@@ -23,16 +24,21 @@ import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.componen
 import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
 import { JvdImagePickerComponent } from './jvd-image-picker/jvd-image-picker.component';
 
+import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.component';
+
 import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    JcdMultiplyComponent,
     KrlColorMixerComponent
+    , TjsMultiplicationComponent  
+    , PizzaGluerComponent
+    , BsListGeneratorComponent
     , TjsMultiplicationComponent
     , MhanCalculateComponent 
-    , PizzaGluerComponent
     , MsSubtractionComponent
     , JvdImagePickerComponent
   ],
