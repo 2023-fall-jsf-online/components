@@ -17,7 +17,11 @@
 
         <mat-form-field>
             <mat-label>Add To-do item</mat-label>
-            <input matInput placeholder="Ex. Dishes">
+            <input 
+                matInput 
+                placeholder="Ex. Dishes"
+                [(ngModel)]="newToDoItemText"
+            >
         </mat-form-field>
 
         <button mat-raised-button color="primary" (click)="addItemToList()">Add</button>
