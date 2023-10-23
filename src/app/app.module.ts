@@ -13,10 +13,19 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { JcdMultiplyComponent } from './jcd-multiply/jcd-multiply.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+
+
 import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 
+import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.component';
+
+import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
+
+import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.component';
+
+import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +33,12 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
     PizzaToppingsComponent,
     JcdMultiplyComponent,
     KrlColorMixerComponent
+    , TjsMultiplicationComponent  
+    , PizzaGluerComponent
+    , BsListGeneratorComponent
     , TjsMultiplicationComponent
+    , MhanCalculateComponent 
+    , MsSubtractionComponent
   ],
   imports: [
     BrowserModule
