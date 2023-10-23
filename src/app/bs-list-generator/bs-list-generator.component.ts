@@ -34,12 +34,20 @@ export class BsListGeneratorComponent   {
       name: "Laundry"
       , done: false
     }
+  ];
+
+  // Need a property to bind to [(ngModel)] in the HTML input element...
+  newToDoItemText = "";
+
+  // And this set this.todos equal to a new array literal,
+  // spreading the old todos in and adding a new one with
+  // the input text...
+  addItemToList = () => this.todos = [
+    ...this.todos
     , {
-      name: " "
+      name: this.newToDoItemText
       , done: false
     }
   ];
-
-  addItemToList = () => this.todos;
 
 }
