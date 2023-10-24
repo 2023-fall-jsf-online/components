@@ -22,6 +22,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.component';
 
 import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
+import { JvdImagePickerComponent } from './jvd-image-picker/jvd-image-picker.component';
 
 import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.component';
 
@@ -39,7 +40,9 @@ import { SnAdditionComponent } from './sn-addition/sn-addition.component';
     , BsListGeneratorComponent
     , TjsMultiplicationComponent
     , MhanCalculateComponent 
-    , MsSubtractionComponent, SnAdditionComponent
+    , MsSubtractionComponent
+    , SnAdditionComponent
+    , JvdImagePickerComponent
   ],
   imports: [
     BrowserModule
