@@ -1,0 +1,11 @@
+input {
+  display: none;
+}
+
+button {
+  margin-bottom: 12px;
+}
+
+img {
+  max-width: 100%
+}
