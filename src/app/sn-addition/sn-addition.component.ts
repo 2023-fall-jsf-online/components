@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sn-addition.component.css']
 })
 export class SnAdditionComponent {
+  numberOne = 10;
+  numberTwo = 90;
+  total = 100;
 
+  add = () => this.total = this.numberOne + this.numberTwo;
 }
