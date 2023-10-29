@@ -28,6 +28,7 @@ import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.
 
 import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
 import { SnAdditionComponent } from './sn-addition/sn-addition.component';
+import { PizzaCrustsComponent } from './pizza-crusts/pizza-crusts.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { SnAdditionComponent } from './sn-addition/sn-addition.component';
     , MhanCalculateComponent 
     , MsSubtractionComponent
     , SnAdditionComponent
-    , JvdImagePickerComponent
+    , JvdImagePickerComponent, PizzaCrustsComponent
   ],
   imports: [
     BrowserModule
