@@ -43,7 +43,8 @@ import { KlMortgageCalcComponent } from './kl-mortgage-calc/kl-mortgage-calc.com
     , MhanCalculateComponent 
     , MsSubtractionComponent
     , SnAdditionComponent
-    , JvdImagePickerComponent, KlMortgageCalcComponent
+    , JvdImagePickerComponent
+    , KlMortgageCalcComponent
   ],
   imports: [
     BrowserModule
