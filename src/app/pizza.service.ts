@@ -26,4 +26,31 @@ export class PizzaService {
 
     return toppingsFromWebService;
   }
+
+  // added pizza crusts
+  getPizzaCrustsFromCloud() {
+    const crustsFromWebService = [
+      {
+        name: 'Original'
+        , price: 0
+      }, 
+      {
+        name: 'Stuffed'
+        , price: 2.00
+      },
+      {
+        name: 'Gluten-Free'
+        , price: 2.00
+      },
+      {
+        name: 'Thin'
+        , price: 1.25
+      },
+      {
+        name: 'Deep Dish'
+        , price: 4.00
+      }
+    ];
+    return crustsFromWebService;
+  }
 }

@@ -22,4 +22,29 @@ export class IngredientServiceService {
 
     return ingredientsFromWebService;
   }
+
+  // added pizza crust option
+  getCrustsFromWebService () {
+    const crustsFromWebService = [
+      {
+        name: 'Original'        
+      }, 
+      {
+        name: 'Stuffed'        
+      },
+      {
+        name: 'Gluten-Free'       
+      },
+      {
+        name: 'Thin'        
+      },
+      {
+        name: 'Deep Dish'        
+      }
+    ];
+    
+    return crustsFromWebService;
+  }
+    
+    
 }

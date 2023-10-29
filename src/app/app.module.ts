@@ -43,7 +43,8 @@ import { PizzaCrustsComponent } from './pizza-crusts/pizza-crusts.component';
     , MhanCalculateComponent 
     , MsSubtractionComponent
     , SnAdditionComponent
-    , JvdImagePickerComponent, PizzaCrustsComponent
+    , JvdImagePickerComponent
+    , PizzaCrustsComponent
   ],
   imports: [
     BrowserModule
