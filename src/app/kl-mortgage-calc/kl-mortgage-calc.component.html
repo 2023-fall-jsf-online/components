@@ -1,24 +1,23 @@
 <mat-card>
     <mat-card-title>
-        Keith's Mortgage Calculator
+        Keith's Monthly Mortgage Calculator
     </mat-card-title>
         <small>Sorry, not pizza...</small>
-    <mat-card-content>
-        <!-- TODO: Two columns, left: Inputs | right: results -->
+    <mat-card-content>        
         <mat-form-field>
             <mat-label>
                 Loan Amount
             </mat-label>
             <input 
                 matInput
-                type="number"
+                type="number"                
                 [(ngModel)]="loanAmount"
             />            
         </mat-form-field>
         <br />
         <mat-form-field>
             <mat-label>
-                Loan-Term
+                Loan-Term (years)
             </mat-label>
             <input 
                 matInput
@@ -29,7 +28,7 @@
         <br />
         <mat-form-field>
             <mat-label>
-                Interest
+                Interest (%)
             </mat-label>
             <input 
                 matInput

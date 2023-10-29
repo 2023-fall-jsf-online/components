@@ -9,23 +9,22 @@ export class KlMortgageCalcComponent implements OnInit {
 
     constructor() {}
 
-    ngOnInit(): void {
-    }
-    
+    ngOnInit(): void { }    
     
     // inputs
     loanAmount = 245000;
     loanTerm = 30;
-    interestRate = 0.085;
-    
-    // calculate
-    calculate = () => {
-      const monthlyInterest = this.interestRate / 12;
-      const numPayments = this.loanTerm * 12;
-      const payment = (this.loanAmount * monthlyInterest) / ( 1 - Math.pow(1 + monthlyInterest, -numPayments));
+    interestRate = 7.5;    
 
+    /**         
+     * @returns monthly payment based on the above inputs
+     */
+    calculate = () => {      
+      const monthlyInterest = (this.interestRate * 0.01) / 12; // changes percentage to decimal -> / 12
+      const numPayments = this.loanTerm * 12;
+      const payment = 
+          (this.loanAmount * monthlyInterest) / ( 1 - Math.pow(1 + monthlyInterest, -numPayments));
       return payment;
-    } 
-    
+    }   
 
 }
