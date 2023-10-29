@@ -13,6 +13,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { JcdMultiplyComponent } from './jcd-multiply/jcd-multiply.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
 
@@ -54,6 +55,7 @@ import { PizzaCrustsComponent } from './pizza-crusts/pizza-crusts.component';
     , MatCheckboxModule
     , MatFormFieldModule
     , MatInputModule
+    , MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
