@@ -1,1 +1,34 @@
-<p>pizza-crusts works!</p>
+<mat-card>
+    <mat-card-title>
+        Available Crusts
+    </mat-card-title>
+    <mat-card-content>
+        <button 
+            mat-mini-fab
+            (click)="checkAll()"
+        >All</button>&nbsp;
+        <button 
+            mat-mini-fab
+            color="secondary"
+            (click)="uncheckAll"
+        >None</button>
+    <br />
+    <br />
+    <div 
+        *ngFor="let pc of availablePizzaCrusts"
+    >
+        <label>
+            <mat-checkbox
+                [(ngModel)]="pc.checked"
+            >
+            </mat-checkbox>
+            {{ pc.name }} ({{ pc.price | currency }})
+        </label>
+    </div>
+    <br />
+    <h3>
+        Total: {{ totalPrice | currency }}
+    </h3>
+    </mat-card-content>
+</mat-card>
+

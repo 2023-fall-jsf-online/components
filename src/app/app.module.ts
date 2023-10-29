@@ -14,7 +14,6 @@ import { JcdMultiplyComponent } from './jcd-multiply/jcd-multiply.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
-
 import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
