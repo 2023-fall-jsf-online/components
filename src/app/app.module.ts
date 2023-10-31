@@ -29,6 +29,7 @@ import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.
 import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
 import { SnAdditionComponent } from './sn-addition/sn-addition.component';
 import { KlMortgageCalcComponent } from './kl-mortgage-calc/kl-mortgage-calc.component';
+import { NpCalculatorComponent } from './np-calculator/np-calculator.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { KlMortgageCalcComponent } from './kl-mortgage-calc/kl-mortgage-calc.com
     , MsSubtractionComponent
     , SnAdditionComponent
     , JvdImagePickerComponent
-    , KlMortgageCalcComponent
+    , KlMortgageCalcComponent, NpCalculatorComponent
   ],
   imports: [
     BrowserModule
