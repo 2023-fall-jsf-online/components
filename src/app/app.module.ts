@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
+import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.component';
+
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -29,9 +31,9 @@ import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.
 import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
 import { SnAdditionComponent } from './sn-addition/sn-addition.component';
 import { KlMortgageCalcComponent } from './kl-mortgage-calc/kl-mortgage-calc.component';
-import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.component';
 
-@NgModule({
+
+@NgModule({  
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
@@ -45,17 +47,18 @@ import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.comp
     , MsSubtractionComponent
     , SnAdditionComponent
     , JvdImagePickerComponent
-    , KlMortgageCalcComponent, QuoteOfTheDayComponent
+    , KlMortgageCalcComponent
+    , QuoteOfTheDayComponent
   ],
   imports: [
-    BrowserModule
-    , FormsModule
-    , BrowserAnimationsModule
-    , MatCardModule
-    , MatButtonModule
-    , MatCheckboxModule
-    , MatFormFieldModule
-    , MatInputModule
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

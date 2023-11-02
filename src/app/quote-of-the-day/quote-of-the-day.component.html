@@ -1,1 +1,14 @@
-<p>quote-of-the-day works!</p>
+<mat-card>
+  <mat-card-title>Max's Quote of the Day</mat-card-title>
+  
+  <mat-card-content>
+    <div>
+      <input matInput #dayInput type="text" placeholder="Enter day e.g. 'Monday'">
+      <button mat-raised-button color="primary" (click)="getQuoteForDay(dayInput.value)">Get Quote</button>
+    </div>
+    <div *ngIf="selectedQuote">
+      <h2>Quote for {{ selectedQuote.day }}:</h2>
+      <p>{{ selectedQuote.content }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>
