@@ -32,6 +32,7 @@ import { KlMortgageCalcComponent } from './kl-mortgage-calc/kl-mortgage-calc.com
 import { NpCalculatorComponent } from './np-calculator/np-calculator.component';
 
 import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.component';
+import { BhDivisionCalculatorComponent } from './bh-division-calculator/bh-division-calculator.component';
 
 
 @NgModule({  
@@ -50,7 +51,7 @@ import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.comp
     , JvdImagePickerComponent
     , KlMortgageCalcComponent
     , NpCalculatorComponent
-    , QuoteOfTheDayComponent
+    , QuoteOfTheDayComponent, BhDivisionCalculatorComponent
   ],
   imports: [
     BrowserModule,
