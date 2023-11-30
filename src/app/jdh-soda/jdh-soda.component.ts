@@ -11,6 +11,8 @@ export class JdhSodaComponent {
   }
 
   availableColas = ['Coke', 'Pepsi', 'RC Cola']
+  availableCitrus = ['Mountain Dew', 'Sprite', '7up']
+  availableOther = ['Barqs', 'Red Bull', 'Dr. Pepper']
   chosenSoda = ''
 
   ngOnInIt(): void {
@@ -19,5 +21,13 @@ export class JdhSodaComponent {
 
   pickCola = () => {
     return this.chosenSoda = this.availableColas[Math.floor(Math.random() * this.availableColas.length)]
+  }
+
+  pickCitrus = () => {
+    return this.chosenSoda = this.availableCitrus[Math.floor(Math.random() * this.availableColas.length)]
+  }
+
+  pickOther = () => {
+    return this.chosenSoda = this.availableOther[Math.floor(Math.random() * this.availableColas.length)]
   }
 }

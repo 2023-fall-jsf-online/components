@@ -6,10 +6,22 @@
         (click)="pickCola()">
         Cola
         </button>
-
+        &nbsp;
+        <button
+        mat-raised-button
+        (click)="pickCitrus()">
+        Citrus
+        </button>
+        &nbsp;
+        <button
+        mat-raised-button
+        (click)="pickOther()">
+        Other
+        </button>
+        <br>
 
         <h3>
-            {{chosenSoda}}
+            Your Soda: {{chosenSoda}}
         </h3>
     </mat-card-content>
 </mat-card>
