@@ -37,15 +37,7 @@ export class PizzaToppingsComponent implements OnInit {
   }
 
   get totalPrice() {
-    return this.availablePizzaToppings
-      .filter(
-        x => x.checked // only want the price from selected toppings
-      )
-      .reduce(
-        (acc, x) => acc + x.price 
-        , 0
-      ) // initialize acc = 0, add x.price to the acc
-    ;
+    return this.availablePizzaToppings.filter(x => x.checked).reduce((acc, x) => acc + x.price, 0);
   }
 
   checkAll = () => this.availablePizzaToppings = this.availablePizzaToppings.map(
@@ -62,4 +54,3 @@ export class PizzaToppingsComponent implements OnInit {
     })
   );
 }
-
