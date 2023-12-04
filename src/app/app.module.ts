@@ -11,6 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { LtpAdditionComponent } from './ltp-addition/ltp-addition.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { LtpAdditionComponent } from './ltp-addition/ltp-addition.component';
     , MatCardModule
     ,MatButtonModule
     ,MatCheckboxModule
+    ,MatInputModule
+    ,MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
