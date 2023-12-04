@@ -10,25 +10,63 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { LtpAdditionComponent } from './ltp-addition/ltp-addition.component';
+import { JcdMultiplyComponent } from './jcd-multiply/jcd-multiply.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
-@NgModule({
+
+import { KrlColorMixerComponent } from './krl-color-mixer/krl-color-mixer.component';
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+
+import { MhanCalculateComponent } from './mhan-calculate/mhan-calculate.component';
+
+import { PizzaGluerComponent } from './pizza-gluer/pizza-gluer.component';
+import { JvdImagePickerComponent } from './jvd-image-picker/jvd-image-picker.component';
+
+import { BsListGeneratorComponent } from './bs-list-generator/bs-list-generator.component';
+
+import { MsSubtractionComponent } from './ms-subtraction/ms-subtraction.component';
+import { SnAdditionComponent } from './sn-addition/sn-addition.component';
+import { KlMortgageCalcComponent } from './kl-mortgage-calc/kl-mortgage-calc.component';
+import { NpCalculatorComponent } from './np-calculator/np-calculator.component';
+
+import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.component';
+
+import { BhDivisionCalculatorComponent } from './bh-division-calculator/bh-division-calculator.component';
+
+import { LtpAdditionComponent } from './ltp-addition/ltp-addition.component';
+
+
+@NgModule({  
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    LtpAdditionComponent
+    JcdMultiplyComponent,
+    KrlColorMixerComponent
+    , TjsMultiplicationComponent  
+    , PizzaGluerComponent
+    , BsListGeneratorComponent
+    , TjsMultiplicationComponent
+    , MhanCalculateComponent 
+    , MsSubtractionComponent
+    , SnAdditionComponent
+    , JvdImagePickerComponent
+    , KlMortgageCalcComponent
+    , NpCalculatorComponent
+    , QuoteOfTheDayComponent
+    , BhDivisionCalculatorComponent
+    , LtpAdditionComponent
   ],
   imports: [
-    BrowserModule
-    , FormsModule
-    , BrowserAnimationsModule
-    , MatCardModule
-    ,MatButtonModule
-    ,MatCheckboxModule
-    ,MatInputModule
-    ,MatFormFieldModule
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,46 @@
+<mat-card>
+    <mat-card-title>
+        Keith's Monthly Mortgage Calculator
+    </mat-card-title>
+        <small>Sorry, not pizza...</small>
+    <mat-card-content>        
+        <mat-form-field>
+            <mat-label>
+                Loan Amount
+            </mat-label>
+            <input 
+                matInput
+                type="number"                
+                [(ngModel)]="loanAmount"
+            />            
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+            <mat-label>
+                Loan-Term (years)
+            </mat-label>
+            <input 
+                matInput
+                type="number"
+                [(ngModel)]="loanTerm"
+            />
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+            <mat-label>
+                Interest (%)
+            </mat-label>
+            <input 
+                matInput
+                type="number"
+                [(ngModel)]="interestRate"
+            />
+        </mat-form-field>
+        <!-- <button 
+            mat-mini-fab
+            (click)="calculate()"
+        > ! </button> -->
+        &nbsp; <h4>Monthly Payment: {{ calculate() | currency }} </h4>
+        <small>This calculator does NOT contain regional taxes or other fees (i.e, HOA, HOI, etc.).</small>
+    </mat-card-content>    
+</mat-card>
