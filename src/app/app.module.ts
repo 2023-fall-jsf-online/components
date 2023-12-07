@@ -36,6 +36,8 @@ import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.comp
 
 import { BhDivisionCalculatorComponent } from './bh-division-calculator/bh-division-calculator.component';
 
+import { LtpAdditionComponent } from './ltp-addition/ltp-addition.component';
+
 
 @NgModule({  
   declarations: [
@@ -53,8 +55,11 @@ import { BhDivisionCalculatorComponent } from './bh-division-calculator/bh-divis
     , JvdImagePickerComponent
     , KlMortgageCalcComponent
     , NpCalculatorComponent
-    , QuoteOfTheDayComponent, BhDivisionCalculatorComponent,
-    JdhSodaComponent
+    , QuoteOfTheDayComponent
+    , BhDivisionCalculatorComponent
+    , LtpAdditionComponent
+    , JdhSodaComponent
+    
   ],
   imports: [
     BrowserModule,
