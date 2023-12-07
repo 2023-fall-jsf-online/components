@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { JdhSodaComponent } from './jdh-soda/jdh-soda.component';
 import { JcdMultiplyComponent } from './jcd-multiply/jcd-multiply.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -57,6 +58,8 @@ import { LtpAdditionComponent } from './ltp-addition/ltp-addition.component';
     , QuoteOfTheDayComponent
     , BhDivisionCalculatorComponent
     , LtpAdditionComponent
+    , JdhSodaComponent
+    
   ],
   imports: [
     BrowserModule,
